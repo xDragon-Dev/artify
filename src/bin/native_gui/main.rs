@@ -6,6 +6,7 @@ use gui::AppGUI;
 
 fn main() -> Result<(), eframe::Error> {
     let options = eframe::NativeOptions {
+        renderer: eframe::Renderer::Glow,
         viewport: eframe::egui::ViewportBuilder::default().with_inner_size([425.0, 250.0]),
         ..Default::default()
     };
