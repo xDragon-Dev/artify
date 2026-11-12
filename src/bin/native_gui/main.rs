@@ -12,7 +12,7 @@ fn main() -> Result<(), eframe::Error> {
     };
 
     eframe::run_native(
-        "Artify 1.0.0 Made By xDragonDev",
+        "Artify 1.0.1 Made By xDragonDev",
         options,
         Box::new(|cc| Ok(Box::new(AppGUI::new(cc)))),
     )
