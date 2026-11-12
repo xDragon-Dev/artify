@@ -17,7 +17,8 @@ impl Default for AppGUI {
 
 impl AppGUI {
     pub fn new(cc: &eframe::CreationContext<'_>) -> Self {
-        cc.egui_ctx.set_zoom_factor(1.0);
+        cc.egui_ctx.set_zoom_factor(1.5);
+        cc.egui_ctx.set_theme(egui::Theme::Dark);
         Self::default()
     }
 }
